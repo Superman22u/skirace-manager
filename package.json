@@ -1,0 +1,78 @@
+{
+    "name": "skirace-manager",
+    "displayName": "Ski Race Betting",
+    "description": "Local ski race tipping app inside VS Code.",
+    "version": "0.0.1",
+    "publisher": "melezza",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onView:skiraceManager.actions",
+        "onCommand:skiraceManager.addRace",
+        "onCommand:skiraceManager.addPlayer",
+        "onCommand:skiraceManager.addTip",
+        "onCommand:skiraceManager.addResult",
+        "onCommand:skiraceManager.showTipResults",
+        "onCommand:skiraceManager.refreshActions"
+    ],
+    "main": "./dist/extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "skiraceManager",
+                    "title": "SkiRace",
+                    "icon": "media/ski.svg"
+                }
+            ]
+        },
+        "views": {
+            "skiraceManager": [
+                {
+                    "id": "skiraceManager.actions",
+                    "name": "Actions"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "skiraceManager.addRace",
+                "title": "SkiRace: Add ski race"
+            },
+            {
+                "command": "skiraceManager.addPlayer",
+                "title": "SkiRace: Add player"
+            },
+            {
+                "command": "skiraceManager.addTip",
+                "title": "SkiRace: Add tip"
+            },
+            {
+                "command": "skiraceManager.addResult",
+                "title": "SkiRace: Add result"
+            },
+            {
+                "command": "skiraceManager.showTipResults",
+                "title": "SkiRace: Show tip results"
+            },
+            {
+                "command": "skiraceManager.refreshActions",
+                "title": "SkiRace: Refresh"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p .",
+        "watch": "tsc -watch -p ."
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "@types/vscode": "^1.85.0",
+        "typescript": "^5.6.0"
+    }
+}
