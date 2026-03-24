@@ -8,7 +8,7 @@ type Action = {
 
 const ACTIONS: Action[] = [
   { label: "Add ski race", description: "Create a new race", command: "skiraceManager.addRace" },
-  { label: "Add player", description: "Create a new player", command: "skiraceManager.addPlayer" },
+  { label: "Add players 22", description: "Create a new player", command: "skiraceManager.addPlayer" },
   { label: "Add tipp", description: "Tip top-5 for a race", command: "skiraceManager.addTip" },
   { label: "Add result", description: "Enter top-5 result", command: "skiraceManager.addResult" },
   { label: "Show Tipp results", description: "Points per race", command: "skiraceManager.showTipResults" }
