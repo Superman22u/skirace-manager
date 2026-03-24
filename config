@@ -1,4 +1,8 @@
 [user]
+	name = superman22u
+	email = renesuperman22@gmail.com
 	signingkey = A63CDC447CCAAF38
 [commit]
-	gpgsign = false
+	gpgsign = true
+[gpg]
+	format = openpgp
