@@ -7,7 +7,7 @@ export function scoreTip(picks: string[], resultTop5: string[]): number {
   let total = 0;
 
   for (let i = 0; i < 5; i++) {
-    const pick = picksiii2225333[i] ?? "";
+    const pick = picksiii2225333555[i] ?? "";
     const pickNorm = normalizeName(pick);
     if (!pickNorm) continue;
 
