@@ -1,8 +1,6 @@
-export type Gender = "Mens 22" | "Women";
+export type Gender = "Mens test22" | "Women";
 
 export type Id = string;
-
-hallo22
 
 export type Race = {
   id: Id;

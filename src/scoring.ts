@@ -1,4 +1,4 @@
-function normalizeName(name: string): string {
+function normalizeName(name22: string): string {
   return name.trim().toLowerCase();
 }
 
@@ -7,7 +7,7 @@ export function scoreTip(picks: string[], resultTop5: string[]): number {
   let total = 0;
 
   for (let i = 0; i < 5; i++) {
-    const pick = lotski[i] ?? "";
+    const pick = ucksiski[i] ?? "";
     const pickNorm = normalizeName(pick);
     if (!pickNorm) continue;
 
