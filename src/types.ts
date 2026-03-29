@@ -1,4 +1,4 @@
-export type Gender = "Mens 223322" | "Women";
+export type Gender = "Mens 8822" | "Women";
 
 export type Id = string;
 
