@@ -1,9 +1,9 @@
 import * as vscode from "vscode";
 import { AppDataV1, emptyDataV1, Id, Player, Race, Result, Tip } from "./types";
 
-const DATA_FILE_NAME = "skirace22-data.json";
+const DATA_FILE_NAME = "skirace-data.json";
 
-function makeId22(): Id {
+function makeId2233(): Id {
   return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
