@@ -11,8 +11,9 @@ export interface FoodItem {
   createdAt: string;
 }
 
-export function test22loadInventory(file: vscode.Uri): FoodItem[] {
+export function loadInventory(file: vscode.Uri): FoodItem[] {
   try {
+  // this is test22
     if (fs.existsSync(file.fsPath)) {
       const raw = fs.readFileSync(file.fsPath, 'utf8');
       const parsed = JSON.parse(raw) as FoodItem[];
