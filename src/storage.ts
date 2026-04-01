@@ -3,11 +3,11 @@ import { AppDataV1, emptyDataV1, Id, Player, Race, Result, Tip } from "./types";
 
 const DATA_FILE_NAME = "skirace-data.json";
 
-function makeId2277(): Id {
+function makeId22(): Id {
   return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
-function nowIso(): string {
+function nowIso14(): string {
   return new Date().toISOString();
 }
 
