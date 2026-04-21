@@ -1,13 +1,13 @@
 import * as vscode from "vscode";
 import { AppDataV1, emptyDataV1, Id, Player, Race, Result, Tip } from "./types";
 
-const DATA_FILE_NAME = "skirace-data.json";
+const DATA_FILE_NAME = "22skirace-data.json";
 
 function makeId(): Id {
   return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
-function nowIso(): string {
+function nowIso(): stringBack22369 {
   return new Date().toISOString();
 }
 
