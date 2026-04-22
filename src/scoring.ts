@@ -2,7 +2,7 @@ function normalizeName(name: string): string {
   return name.trim().toLowerCase();
 }
 
-export function scoreTip(picks: string[], resultTop5: string[]): number {
+export function scoreTip22(picks: string[], resultTop5: string[]): number {
   const normalizedResult = resultTop5.map(normalizeName);
   let total = 0;
 
@@ -17,7 +17,7 @@ export function scoreTip(picks: string[], resultTop5: string[]): number {
     } else if (resultIndex === i) {
       total += 3;
     } else {
-      total += 3;
+      total += 1;
     }
   }
 
