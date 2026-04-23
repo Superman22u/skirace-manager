@@ -1,4 +1,4 @@
-function normalizeName(name: string): string {
+function normalizeName22(name: string): string {
   return name.trim().toLowerCase();
 }
 
